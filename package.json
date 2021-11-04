@@ -1,66 +1,21 @@
 {
-  "name": "zpack",
-  "version": "1.1.2",
-  "publisher": "SeyyedKhandon",
-  "author": "SeyyedMahdi Hassanpour",
-  "displayName": "Web Essentials Developer Experience Extension Pack (ZPack series)",
-  "description": "An Opinionated collection/pack of essentials extensions for Web Developers in VSCode (Better DX in Mind)",
+  "name": "rfxformattingconventions",
+  "version": "0.0.1",
+  "publisher": "MMcIntyre",
+  "author": "MMcIntyre",
+  "displayName": "RFX Center Formatter Extension Pack",
+  "description": "A collection of extensions and settings for formatting code.",
   "license": "MIT",
   "galleryBanner": {
     "color": "#47B784",
     "theme": "dark"
   },
-  "icon": "assets/zpack.jpg",
+  "icon": "",
   "repository": {
-    "url": "https://github.com/SeyyedKhandon/zpack.git"
+    "url": "https://github.com/mmcintyre123/rfx-center-formatting-conventions"
   },
-  "homepage": "https://github.com/SeyyedKhandon/zpack.git",
-  "bugs": {
-    "url": "https://github.com/SeyyedKhandon/zpack.git/issues"
-  },
-  "keywords": [
-    "web",
-    "zpack",
-    "developer experience",
-    "web dx extension pack",
-    "extension pack",
-    "DX Enhancer Pack (EPack)",
-    "Frontend Extension Pack (FPack)",
-    "Git Extension Pack (GPack)",
-    "Web Quality/Metric Extension Pack (QPack)",
-    "auto close tag, better comments,... ",
-    "One Dark Pro",
-    "Material Icon Pack",
-    "Fira Code font",
-    "ESlint",
-    "Code Metrics",
-    "Code Spell Checker",
-    "Error Lens",
-    "Import Cost",
-    "git Extension Pack",
-    "conventional commit",
-    "extension pack",
-    "git file history",
-    "git graph",
-    "git lens",
-    "HTMLHint",
-    "HTML CSS Support",
-    "Auto Rename Tag",
-    "Color Highlight",
-    "Color Info",
-    "Color Manager",
-    "CSS Navigation",
-    "Image preview",
-    "Live Server",
-    "Static server",
-    "file-size",
-    "Project Manager",
-    "Better Comments",
-    "Bracket Pair Colorizer",
-    "Markdown Preview Enhanced",
-    "Prettier - Code formatter",
-    "Formatting Toggle"
-  ],
+  "homepage": "https://github.com/mmcintyre123/rfx-center-formatting-conventions",
+  "keywords": [],
   "categories": [
     "Extension Packs"
   ],
@@ -68,14 +23,14 @@
     "vscode": "^1.55.0"
   },
   "activationEvents": [
-    "onCommand:zpack.updateConfig"
+    "onCommand:rfxformattingconventions.updateSettings"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "zpack.updateConfig",
-        "title": "Update Essentials Web Extension Pack (ZPack series) Config"
+        "command": "rfxformattingconventions.updateSettings",
+        "title": "Configure rfx-center default formatters (updates settings.json)"
       }
     ]
   },
@@ -88,11 +43,11 @@
     "test": "node ./out/test/runTest.js"
   },
   "extensionPack": [
-    "SeyyedKhandon.gpack",
-    "SeyyedKhandon.qpack",
-    "SeyyedKhandon.epack",
-    "SeyyedKhandon.fpack",
-    "SeyyedKhandon.tpack"
+    "foxundermoon.shell-format",
+    "michelemelluso.code-beautifier",
+    "mtxr.sqltools",
+    "redhat.java",
+    "redhat.vscode-xml"
   ],
   "devDependencies": {
     "@types/vscode": "^1.55.0",

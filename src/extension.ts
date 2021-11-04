@@ -12,15 +12,15 @@ const updateUserSettings = async (settings: GeneralObject[]) => {
 };
 export async function activate(context: vscode.ExtensionContext) {
   console.log(
-    'Congratulations, your extension "Essentials Web Extension Pack (ZPack series)" is now active!'
+    'Congratulations, your extension "RFX Center Formatter Extension Pack" is now active!'
   );
   let disposable = vscode.commands.registerCommand(
-    "zpack.updateConfig",
+    "rfxformattingconventions.updateSettings",
     async () => {
       console.log(JSON.stringify(defaultSettings, null, 1));
       await updateUserSettings(defaultSettings);
       await vscode.window.showInformationMessage(
-        "ZPack Config has been updated"
+        "Settings have been updated."
       );
     }
   );

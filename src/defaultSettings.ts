@@ -1,29 +1,15 @@
 import { GeneralObject } from "./util";
 
 export const defaultSettings = [
-  { "files.autoSave": "afterDelay" },
-  { "explorer.compactFolders": false },
-  { "projectManager.openInNewWindowWhenClickingInStatusBar": true },
-  { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  { "editor.formatOnSave": true },
-  { "cSpell.userWords": [] },
-  { "eslint.alwaysShowStatus": true },
-  {
-    "eslint.codeAction.showDocumentation": {
-      enable: true,
-    },
-  },
-  { "eslint.lintTask.enable": true },
-  { "errorLens.statusBarColorsEnabled": true },
-  { "errorLens.statusBarMessageEnabled": true },
-  { "errorLens.statusBarMessageType": "closestProblem" },
-  { "errorLens.followCursor": "closestProblem" },
-  { "errorLens.gutterIconsEnabled": true },
-  { "errorLens.scrollbarHackEnabled": true },
-  { "errorLens.fontStyleItalic": true },
-  { "editor.guides.bracketPairs": true },
-  { "workbench.colorTheme": "One Dark Pro" },
-  { "workbench.iconTheme": "material-icon-theme" },
-  { "editor.fontFamily": "Fira Code" },
-  { "editor.fontLigatures": true },
+  { "[html]": { "editor.defaultFormatter": "vscode.html-language-features" } },
+  { "[typescript]": { "editor.defaultFormatter": "vscode.typescript-language-features" } },
+  { "[css]": { "editor.defaultFormatter": "michelemelluso.code-beautifier" } },
+  { "[scss]": { "editor.defaultFormatter": "michelemelluso.code-beautifier" } },
+  { "[javascript]": { "editor.defaultFormatter": "vscode.typescript-language-features" } },
+  { "[json]": { "editor.defaultFormatter": "vscode.json-language-features" } },
+  { "[jsonc]": { "editor.defaultFormatter": "vscode.json-language-features" } },
+  { "[shellscript]": { "editor.defaultFormatter": "foxundermoon.shell-format" } },
+  { "[xml]": { "editor.defaultFormatter": "redhat.vscode-xml" } },
+  { "[java]": { "editor.defaultFormatter": "redhat.java", "editor.rulers": [200], "editor.wordWrap": "off" } },
+  { "[sql]": { "editor.defaultFormatter": "mtxr.sqltools" } }
 ] as GeneralObject[];

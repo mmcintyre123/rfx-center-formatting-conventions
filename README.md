@@ -8,7 +8,7 @@
 _____
 <details>
 <summary>
-<i>Click to see what configs this plugin will use</i>
+<i>Click to see what configs this plugin will add to settings.json</i>
 </summary>
 
 ```json
